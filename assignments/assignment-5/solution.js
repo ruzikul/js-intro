@@ -28,10 +28,11 @@ console.log(addition);
 //------------------------------------------------------//
 // += operator
 
-var result = "The greatest glory in"
-result += " living lies not in"
-result += " never falling, but in"
-result += " rising every time"
-result += " we fall."
-result += " - Nelson Mandela"
+var result = "";
+result += part1;
+result += " " + part2;
+result += " " + part3;
+result += " " + part4;
+result += " " + part5;
+result += " " + author;
 console.log(result)
