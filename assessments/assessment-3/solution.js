@@ -16,11 +16,11 @@ console.log(challenge2);
 
 //---------------------------------------------\\
         // Challenge 3
-
-var fullName = "John Doe"
-var initial = "JD"
-console.log(fullName);
-console.log(initial);
+var fullName = "John Doe";
+var initial = fullName[0];
+var initial2 = fullName[5];
+var result = initial.concat(initial2);
+console.log(result);
 
 
 //---------------------------------------------\\
