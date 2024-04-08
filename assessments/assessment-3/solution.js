@@ -27,16 +27,23 @@
                 // Challenge 4
         
         var alphabet = "abcdefghijklmnopqrstuvwxyz";
-        var alphabetWithoutMyNameFirstCharacter = alphabet.replace("a", "")
-        console.log(alphabetWithoutMyNameFirstCharacter);
+        var firstLetter = "a"
+        var firstLetterIdx = alphabet.indexOf(firstLetter);
+        var alphabetWithoutMyFirstLetter = alphabet.slice(0, firstLetter) + alphabet.slice(firstLetterIdx + 1)
+        console.log(alphabetWithoutMyFirstLetter);
         
         
         //---------------------------------------------\\
                 // Challenge 5
         
         var completeSentence = "The quick brown fox jumps over the lazy dog."
-        var randomChar = "u"
+        var randomChar = "o"
+        var completeSentenceLength = completeSentence.length;
+        var completeSentenceWithoutRandomChar = completeSentence.replaceAll(randomChar, "");
         
+        var randomCharCount = completeSentenceLength - completeSentenceWithoutRandomChar.length;
+
+        console.log(randomCharCount);
         
         //---------------------------------------------\\
                 // Challenge 6
