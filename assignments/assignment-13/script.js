@@ -11,7 +11,6 @@ var timeGen = Math.floor(Math.random() * 86400);
 
 
 
-
 // --- Greeting Message Based on Time --
 
 var randomTime = Math.floor(Math.random() * 24);
