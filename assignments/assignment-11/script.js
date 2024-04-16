@@ -24,7 +24,7 @@ if (ageRequirement > age) {
 var user = "Aziz";
 var userLength = user.length
 
-if (user.length > 5) {
+if (user.length >= 5) {
     console.log("Valid username.")
 } else { 
     console.log("Username must be at least 5 characters long.")
