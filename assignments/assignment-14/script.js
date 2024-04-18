@@ -1,6 +1,6 @@
 // --- isOdd --
 function isOdd(number) {
-    var odd = number % 3 === 0;
+    var odd = number % 2 !== 0;
     console.log(`Odd number : ${odd}`)
 }
 isOdd(3); // true
@@ -18,8 +18,66 @@ isEven(5); // Logs: false
 // --- isIncludes -- 
 
 function isIncludes(mainStr, targetStr) {
-    var isIncludesStr = mainStr.includes(targetStr)
-    console.log(isIncludesStr)
+    var mainStrLow = mainStr.toLowerCase();
+    var targetStrLow = targetStr.toLowerCase();
+    var result = mainStrLow.includes(targetStrLow) !== -1;
+    console.log(result)
 }
 isIncludes("Hello world", "WORLD"); // Logs: true
-isIncludes("Look here", "there"); // Logs: false
+
+// --- minValue -- 
+
+function minValue(number1, number2) {
+    if (number1 === number2) {
+        console.log(number1 + ", " + number2)
+    } else if (number1 > number2) {
+        console.log(number1);
+    } else {
+        console.log(number2);
+    }
+}
+minValue(40, 30);
+
+// --- maxValue -- 
+
+function maxValue(number1, number2) {
+    if (number1 === number2) {
+        console.log(number1 + ", " + number2)
+    } else if (number1 > number2) {
+        console.log(number1);
+    } else {
+        console.log(number2);
+    }
+}
+maxValue(20, 10);
+
+// --- power -- 
+
+function power(base, exponent) {
+    var result = base * exponent;
+    console.log(result);
+}
+power(5, 5);
+
+// --- isProductGreater -- 
+
+function isProductGreater(num1, num2, num3) {
+    var product = num1 * num2 * num3;
+    var sum = num1 + num2 + num3;
+    console.log(product > sum)
+}
+isProductGreater(1, 2, 3); // Logs: false
+isProductGreater(5, 6, 2); // Logs: true
+
+// --- swapFirstAndLastChars -- 
+
+
+
+// --- firstHalf -- 
+
+function firstHalf(string) {
+    var half = Math.floor(string.length / 2)
+    console.log(string.slice(0, half))
+}
+firstHalf("hello"); // Logs: "he"
+firstHalf("four"); // Logs: "fo" 
