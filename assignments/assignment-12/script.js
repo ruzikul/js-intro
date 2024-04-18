@@ -1,7 +1,7 @@
-// --- Generate a Random Username --- \\
-
+// --- Genrate random number 1-10 --- \\
 var random = Math.floor(Math.random() * 10) + 1;
 
+// --- Generate a Random Username --- \\
 if (random > 1 && random < 3) {
     console.log("Bob");
 } else if (random > 4 && random < 7) {
