@@ -71,7 +71,17 @@ isProductGreater(5, 6, 2); // Logs: true
 
 // --- swapFirstAndLastChars -- 
 
-
+function swapFirstAndLastChars(string) {
+    if (string.length > 1) {
+        var firstCharacter = string[0];
+        var middle = string.slice(1, string.length -1);
+        var lastCharacter = [string.length -1];
+        var newStr = lastCharacter + middle + firstCharacter;
+        console.log(newStr);
+    } else {
+        console.log(string);
+    }
+} 
 
 // --- firstHalf -- 
 
@@ -81,3 +91,17 @@ function firstHalf(string) {
 }
 firstHalf("hello"); // Logs: "he"
 firstHalf("four"); // Logs: "fo" 
+
+// --- getInitials --
+
+function getInitials(fullName) {
+    var firstSpaceIdx = fullName.indexOf(' ');
+    var lastSpaceIdx = fullName.lastIndexOf(' ');
+    var initial1 = fullName[0];
+    var initial2 = fullName[firstSpaceIdx + 1];
+    var initial3 = fullName[lastSpaceIdx + 1];
+    var initials = initial1 + initial2 + initial3;
+    console.log(initials.toUpperCase());
+}
+
+getInitials("Barack Hussein Obama")
