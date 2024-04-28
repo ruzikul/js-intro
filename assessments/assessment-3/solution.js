@@ -8,10 +8,17 @@
         
         //---------------------------------------------\\
                 // Challenge 2
-        
+
         var javascript = "javascript";
-        var challenge2 = (javascript.replace("javascript", 'JavaScript'))
-        console.log(challenge2);
+        var firstSIdx = javascript.indexOf("s");
+
+        var pt1 = javascript[0].toUpperCase();
+        var pt2 = javascript.slice(1, firstSIdx);
+        var pt3 = javascript[firstSIdx].toUpperCase();
+        var pt4 = javascript.slice(firstSIdx + 1);
+
+        javascript = pt1 + pt2 + pt3 + pt4;
+        console.log(javascript);
         
         
         //---------------------------------------------\\
@@ -50,4 +57,7 @@
         
         var randomString = "Greetings";
         var randomCharacter = "e";
-        var new2 = (randomString.length)
+        var randomStringLength = randomString.length;
+        var randomStringWithoutRandomCharacter = randomString.replaceAll(randomCharacter, "");
+        var randomCharCount = randomStringLength - randomStringWithoutRandomCharacter.length;
+        console.log(randomCharCount);
