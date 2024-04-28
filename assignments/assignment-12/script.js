@@ -1,20 +1,18 @@
 // --- Genrate random number 1-10 --- \\
 var random = Math.floor(Math.random() * 10) + 1;
-
+var name;
 // --- Generate a Random Username --- \\
 if (random > 1 && random < 3) {
-    console.log("Bob");
+    name = "Bob";
 } else if (random > 4 && random < 7) {
-    console.log("Martin");
+    name = "Martin";
 } else {
-    console.log("Jennifer");
+    name = "Jennifer";
 }
-
 
 // --- Greeting --- \\
 
 var randomNumber = Math.floor(Math.random() * 4);
-var name = "Aziz";
 
 if (randomNumber === 1) {
     console.log(`Dear ${name}, wishing you a day filled with happiness and a year filled with joy.`)
