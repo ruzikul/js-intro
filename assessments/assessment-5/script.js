@@ -13,9 +13,37 @@ if (number1 === number2) {
 
 // --- Challenge 2 --- \\
 
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+var randomIdx = Math.floor(Math.random() * alphabet.length);
+var targetCharacter = alphabet[randomIdx];
+
 var string1 = "examplestringonegenerated";
 var string2 = "secondexamplestringgenerated";
-var targetCharacter 
+
+var originalLength1 = string1.length;
+var originalLength2 = string2.length;
+
+var newString1 = string1.replaceAll(targetCharacterOfLatter, "");
+var newString2 = string1.replaceAll(targetCharacterOfLatter, "");
+
+var count1 = originalLength1 - newString1.length;
+var count2 = originalLength2 - newString2.length;
+
+if (count1 === count2 && count1 > 0) {
+    console.log(
+        "Number of " + targetCharacter + " is the same in both strings."
+    );
+} else if (count1 > count2) {
+    console.log(
+        "Number of " +
+            targetCharacter +
+            " in the first string is greater than the second one."
+    );
+} else if (count2 > count1) {
+    console.log("The second one is greater.");
+} else {
+    console.log("Character does not exist in each string.");
+}
 
 // --- Challenge 3 --- \\
 
@@ -31,10 +59,12 @@ if (randomNumber / 3) {
 
 // --- Challenge 4 --- \\
 
-var strings = "I find myself reflecting on past adventures, realizing that my greatest discoveries were often right at home, hidden in plain sight, waiting to be appreciated."
-
-
-
+var sentence = "I find myself reflecting on past adventures, realizing that my greatest discoveries were often right at home, hidden in plain sight, waiting to be appreciated, and truly making them mine.";
+sentence = sentence.replace("I", "We");
+sentence = sentence.replace("myself", "ourselves");
+sentence = sentence.replace("my", "our");
+sentence = sentence.replace("mine", "ours");
+console.log(sentence);
 
 // --- Challenge 5 --- \\
 
